@@ -35,6 +35,7 @@ namespace ComponentArchi.Component
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
+
         }
     }
 }
