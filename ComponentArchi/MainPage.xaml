@@ -38,5 +38,11 @@
             <TextBlock Text="TOTAL" />
             <TextBlock Text="{Binding  PersonInfo.FirstName}"/>
         </StackPanel>
+
+        <component:Result3Control
+            x:Name="personListControl"
+            Grid.Column="0"
+            Grid.Row="2"
+            PersonInfo="{Binding PersonInfo2, Mode=TwoWay}"/>
     </Grid>
 </Page>

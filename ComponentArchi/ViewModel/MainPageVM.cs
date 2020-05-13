@@ -1,4 +1,5 @@
 ﻿using ComponentArchi.Model;
+using System.Collections.Generic;
 using System.Windows.Input;
 using Vivonet.WindowApp.Utility;
 
@@ -15,6 +16,20 @@ namespace ComponentArchi.ViewModel
         {
             get { return _personInfo; }
             set { _personInfo = value; }
+        }
+
+        private Person _personInfo2;   //common repo 
+        public Person PersonInfo2
+        {
+            get { return _personInfo2; }
+            set { _personInfo2 = value; }
+        }
+
+        private List<Person> _personInfos;   //common repo 
+        public List<Person> PersonInfos
+        {
+            get { return _personInfos; }
+            set { _personInfos = value; }
         }
 
         public MainPageVM(MainPage mainPage)
