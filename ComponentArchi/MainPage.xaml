@@ -42,7 +42,10 @@
         <component:Result3Control
             x:Name="personListControl"
             Grid.Column="0"
-            Grid.Row="2"
-            PersonInfo="{Binding PersonInfo2, Mode=TwoWay}"/>
+            Grid.Row="2" />
+        <!--
+            PersonInfo="{Binding PersonInfo2, Mode=OneTime}"
+            PersonInfos="{Binding PersonInfo, Mode=OneTime}"
+            -->
     </Grid>
 </Page>

@@ -12,16 +12,17 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
         <TextBlock
             Grid.Row="0"
             Text="RESULT 3" />
+        <!--
         <TextBlock 
             Grid.Row="1" 
             Text="{Binding PersonInfo.FirstName}"/>
-        <!--
+        -->
         <ListView 
             Grid.Row="1"
             x:Name="personList"
@@ -36,23 +37,17 @@
 
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border>
-                        <StackPanel 
-                                Margin="5 -5 0 0"
-                                Width="1000">
-                            <TextBlock 
+                    <StackPanel>
+                        <TextBlock 
                                 x:Name="textProductPrice"
                                 VerticalAlignment="Center"
-                                FontSize="20"
-                                Foreground="DimGray"
                                 Opacity="0.7"
-                                Text="fe"/>
-                        </StackPanel>
-                    </Border>
+                                Text="{Binding FirstName}"/>
+                    </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
 
         </ListView>
-        -->
+        
     </Grid>
 </UserControl>

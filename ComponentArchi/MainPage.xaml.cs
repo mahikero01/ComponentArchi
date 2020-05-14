@@ -20,7 +20,7 @@ namespace ComponentArchi
             _mainPageVM = new MainPageVM(this);
             DataContext = _mainPageVM;
 
-            _mainPageVM.PersonInfos = CreateMockData();
+           
 
             PassData2();
             
@@ -33,11 +33,16 @@ namespace ComponentArchi
 
         public void PassData2()
         { 
+            var PersonInfos = CreateMockData();
+
             var personTemp = new Person();
             personTemp.FirstName = "Rico mji";
             _mainPageVM.PersonInfo2 = personTemp;
 
+          
+            personListControl.PersonInfos = PersonInfos;
             personListControl.PersonInfo = personTemp;
+
         }
 
         private List<Person> CreateMockData()
