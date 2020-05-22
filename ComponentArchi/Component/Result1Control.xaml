@@ -12,5 +12,20 @@
     <StackPanel>
         <TextBlock Text="RESULT 1" />
         <TextBlock Text="{Binding PersonInfo.FirstName}"/>
+        <TimePicker x:Name="timePickme" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+
+        <Button Click="Button_Click">
+            Click Me
+        </Button>
+
+        <Button Click="Button_Click2">
+            Click Me 2
+        </Button>
+        <ListView Height="100"/>
+
+
+
+
     </StackPanel>
 </UserControl>

@@ -29,7 +29,7 @@
             SubmitCommand ="{ Binding ElementName=ThisPage, Path=DataContext.SubmitInfoCommand }"/>
         <!--PersonInfo="{Binding PersonInfo, Mode=TwoWay}" -->
 
-        <component:Result2Control 
+        <component:Result1Control 
             x:Name="resultControl"      
             Grid.Column="1" 
             Grid.Row="1"/>
@@ -43,9 +43,15 @@
             x:Name="personListControl"
             Grid.Column="0"
             Grid.Row="2" />
+        
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="369,98,0,0" Grid.Row="2" VerticalAlignment="Top"/>
         <!--
             PersonInfo="{Binding PersonInfo2, Mode=OneTime}"
             PersonInfos="{Binding PersonInfo, Mode=OneTime}"
             -->
+        
+        
+        
+        
     </Grid>
 </Page>
